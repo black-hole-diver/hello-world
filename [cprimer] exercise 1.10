@@ -1,0 +1,14 @@
+/* Sum 10 to 1 by while loop
+
+#include <iostream>
+
+int main()
+{
+	int sum=0, value=10;
+	while (value>=0){
+		sum += value;
+		--value;
+	}
+	std::cout <<sum<< std::endl;
+	return 0;
+}
