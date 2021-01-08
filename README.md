@@ -1,2 +1,1 @@
-# hello-world
-My first repository ever.
+This project is my practice on C++ programming by the books 'C++ Primer' and 'Programming: Principles and Practice Using C++' to be able to code in C++ and understand the principles of coding in the basis.
