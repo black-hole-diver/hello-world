@@ -1,0 +1,13 @@
+//the first for loop exercise to find the sum of the number from -100 to 100
+
+#include <iostream>
+using namespace std; //to not write std:: every time I write code
+
+int main()
+{
+  int sum=0;
+  for (int i= -100; i <= 100; ++1)
+    sum += i;
+  return 1;
+}
+   
