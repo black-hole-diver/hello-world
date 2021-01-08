@@ -1,0 +1,38 @@
+/*Show numbers between 2 numbers with for loop,
+its counterpart is exercise 1.11 */
+
+#include <iostream>
+#include <math.h> //to get the absolute function here
+using namespace std; //to not write std:: every time I write code
+
+int main()
+{
+	int num1,num2,a,b,dif,adif;
+	cout <<"Find numbers between two numbers.\n" <<"Enter the fist number:"<< endl;
+	cin >>num1;
+	cout <<"Enter the second number:"<< endl;
+	cin >>num2;
+	cout <<"The number between "<<num1<< " and "<<num2<< " are:\n"<< endl;
+  
+	dif = num1 - num2;
+	adif = abs(dif); //the difference of num1 and num2
+	
+	if (adif <= 1){ //if the numbers' difference is equal or less than 1, there's no integer between
+		cout <<"No integer between" <<endl;
+	}
+	
+	//only show the numbers between!
+	else if (adif>1 and num1>num2){
+		for (int n1 = num1-1, n2=num2; n1>n2;--n1){
+			cout <<n1 <<endl;
+		}
+	}
+
+	else
+	{
+		for (int n1 = num1+1, n2 = num2; n1 < n2;++n1){
+			cout <<n1 <<endl;
+		}
+	}
+	return 1;
+}
