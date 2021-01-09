@@ -1,0 +1,18 @@
+//sum up a set of numbers
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	float sum = 0, n;
+	cout <<"Add numbers" << endl;
+	cin >> n;
+	while (n){
+		sum += n;
+		cin >> n;
+	}
+	cout <<sum <<endl;
+	return 1;
+}
