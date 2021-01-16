@@ -1,0 +1,36 @@
+/*operation to show how many times each number appear in a set of number
+when the numbers with the same value are clustered to gather i.e. 1 1 22 22 33 33 33 44 44 45 46*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int currVal = 0, val = 0;
+	//currVal is the number we're counting; we'll read new values into val
+		
+	if (cin >> currVal)
+	{
+		int cnt = 1;
+		//store the count for the current value we're processing
+		
+		while (cin >> val)
+		//read the remaining numbers
+		{
+			if (val == currVal){
+				++cnt; //if the values are the same, then add 1 to cnt
+			}
+			
+			//otherwise print the count for previous value
+			else {
+				cout << currVal <<" occurs "<<cnt<<" times.\n";
+				currVal = val;
+				cnt = 1;
+			}	
+		} //end of while loop
+		
+		//print the count for the last value in the set
+		cout <<currVal << " occurs "<< cnt <<" times.\n";	
+	}
+	return 9;
+}
