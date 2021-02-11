@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	char frst,secd;
+	cout <<"Give me your chromosome: \n";
+	cin >>frst;
+	cout <<"Give me more: \n";
+	cin >>secd;
+	if (frst = '+'){
+		cout <<"You have Rh+ blood";
+	}
+	else {
+		if (secd = '-')
+			cout <<"You have Rh- blood";
+		else {
+			cout <<"YOu have Rh+ blood";
+		}
+	}
+}
