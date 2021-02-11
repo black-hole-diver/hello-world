@@ -3,19 +3,20 @@ using namespace std;
 
 int main()
 {
-	char frst,secd;
-	cout <<"Give me your chromosome: \n";
-	cin >>frst;
-	cout <<"Give me more: \n";
-	cin >>secd;
-	if (frst = '+'){
-		cout <<"You have Rh+ blood";
+	char first,second;
+	cout <<"Give me your chromosome: \n"<< endl;
+	cin >>first;
+	cout <<"Give me your 2nd chromosome: \n"<< endl;
+	cin >>second;
+	if (first == '+' or second == '+'){
+		cout <<"Rh+" << endl;
 	}
-	else {
-		if (secd = '-')
-			cout <<"You have Rh- blood";
-		else {
-			cout <<"YOu have Rh+ blood";
-		}
+	else if (first == '-' and second == '-'){
+		cout <<"Rh-" << endl;
 	}
+	else{
+		cout <<"Write + or -!" <<endl;
+	}
+	
+	return 0;
 }
